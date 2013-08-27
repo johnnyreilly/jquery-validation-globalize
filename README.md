@@ -1,4 +1,4 @@
-jquery-validation-globalize
+jQuery Validation Globalize
 ===========================
 
 An extension to the jQuery Validation Plugin which makes it use Globalize for number and date parsing (enabling simple internationalized validation).
