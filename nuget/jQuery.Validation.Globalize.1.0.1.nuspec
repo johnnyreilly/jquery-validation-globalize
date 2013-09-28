@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>jQuery.Validation.Globalize</id>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
         <title>jQuery.Validation.Globalize</title>
         <authors>John Reilly</authors>
         <owners>John Reilly</owners>
@@ -11,9 +11,9 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>An extension to the jQuery Validation Plugin which makes it use Globalize for number and date parsing (enabling simple internationalized validation)</description>
         <summary>An extension to the jQuery Validation Plugin which makes it use Globalize for number and date parsing (enabling simple internationalized validation)</summary>
-        <releaseNotes>Initial release</releaseNotes>
+        <releaseNotes>Changed min, max and range to defer to original validation methods in jQuery Validation once parsing has taken place (should the implementations of these ever change then we no longer need to propogate those changes manually into jQuery Validation Globalize).  Removed direct dependency on jQuery - not needed as jQuery Validation has (and will always have) this dependency itself.</releaseNotes>
         <copyright>Copyright © 2013 John Reilly.</copyright>
-        <tags>jQuery Validation, Globalize, Internationalization</tags>
+        <tags>jQuery Validation, globalize, internationalization, localization, cultures, languages, locales, i18n, number, date, parse</tags>
         <dependencies>
             <dependency id="jQuery.Validation" />
             <dependency id="jquery-globalize" />

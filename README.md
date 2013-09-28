@@ -4,8 +4,7 @@ jQuery Validation Globalize
 An extension to the jQuery Validation Plugin which makes it use Globalize for number and date parsing (enabling simple internationalized validation).
 
 This extension has the following dependencies:
-- jQuery
-- jQuery Validation
+- jQuery Validation (which itself depends on jQuery)
 - Globalize
 
 ##Getting started
@@ -38,6 +37,11 @@ Copyright © 2013 [John Reilly](mailto:johnny_reilly@hotmail.com).
 MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)
 
 ##Changelog
+
+###1.0.1 / 2013-09-28
+
+- Changed min, max and range to defer to original validation methods in jQuery Validation once parsing has taken place. Should the implementations of these ever change then we no longer need to propogate those changes manually into jQuery Validation Globalize.  
+- Removed direct dependency on jQuery - not needed as jQuery Validation has (and will always have) this dependency itself.
 
 ###1.0.0 / 2013-08-27
 
