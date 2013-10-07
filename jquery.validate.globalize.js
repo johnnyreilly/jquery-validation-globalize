@@ -23,7 +23,7 @@
 
     $.validator.methods.date = function (value, element) {
         var val = Globalize.parseDate(value);
-        return this.optional(element) || (val);
+        return this.optional(element) || (val instanceof Date);
     };
 
     // Tell the validator that we want numbers parsed using Globalize, 
