@@ -15,6 +15,7 @@
     // Tell the validator that we want numbers parsed using Globalize
 
     $.validator.methods.number = function (value, element) {
+		if (!value) return false;
         var val = Globalize.parseFloat(value);
         return this.optional(element) || ($.isNumeric(val));
     };
@@ -22,6 +23,7 @@
     // Tell the validator that we want dates parsed using Globalize
 
     $.validator.methods.date = function (value, element) {
+		if (!value) return false;
         var val = Globalize.parseDate(value);
         return this.optional(element) || (val instanceof Date);
     };
@@ -30,16 +32,19 @@
     // then call into original implementation with parsed value
 
     $.validator.methods.min = function (value, element, param) {
+		if (!value) return false;
         var val = Globalize.parseFloat(value);
         return originalMethods.min.call(this, val, element, param);
     };
 
     $.validator.methods.max = function (value, element, param) {
+		if (!value) return false;
         var val = Globalize.parseFloat(value);
         return originalMethods.max.call(this, val, element, param);
     };
 
     $.validator.methods.range = function (value, element, param) {
+		if (!value) return false;
         var val = Globalize.parseFloat(value);
         return originalMethods.range.call(this, val, element, param);
     };
