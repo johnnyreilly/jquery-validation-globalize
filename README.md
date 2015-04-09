@@ -21,9 +21,11 @@ The following validator methods are patched by jQuery Validation Globalize:
 - range
 - date
 
-##Available
+## Install
 
-On Nuget, Bower and.... well here!
+On Bower (`bower install jquery-validation-globalize --save` ), NuGet (`Install-Package jQuery.Validation.Globalize`) and.... well here!  
+
+By the way - ignore the version number on NuGet - it says 1.0.1 - more properly it should be 0.1.1 (to match the Globalize version).  I'm not planning to maintain the version on NuGet any further but I thought I should note this down somewhere to avoid confusion.
 
 ## Author
 **John Reilly**
