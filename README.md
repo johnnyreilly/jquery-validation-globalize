@@ -13,13 +13,17 @@ Simply include jquery.validate.globalize.js on a page **after** jquery.validate.
 
 So what's different?  Well, for example, if you're catering for German users then you will be presumably using the "de-DE" Globalize culture.  If this culture has been selected at the time of validation then "Dienstag, 27. August 2013" will be successfully validated as a date and "10,5" will be successfully validated as a number.
 
-The following validator methods are patched by jQuery Validation Globalize: 
+The following validator methods are patched by jQuery Validation Globalize:
 
 - number
 - min
 - max
 - range
 - date
+
+##Available
+
+On Nuget, Bower and.... well here!
 
 ## Author
 **John Reilly**
@@ -30,7 +34,7 @@ The following validator methods are patched by jQuery Validation Globalize:
 Inspired by [Scott Hanselman's blog post](http://www.hanselman.com/blog/GlobalizationInternationalizationAndLocalizationInASPNETMVC3JavaScriptAndJQueryPart1.aspx) and evolved from [my blog post](http://icanmakethiswork.blogspot.com/2012/09/globalize-and-jquery-validate.html).  Entirely dependent upon [jQuery Validation](https://github.com/jzaefferer/jquery-validation) and [Globalize](https://github.com/jquery/globalize/).
 
 ## Copyright
-Copyright © 2013 [John Reilly](mailto:johnny_reilly@hotmail.com).
+Copyright ï¿½ 2013 [John Reilly](mailto:johnny_reilly@hotmail.com).
 
 ##License
 
