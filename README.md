@@ -4,8 +4,8 @@ jQuery Validation Globalize
 An extension to the jQuery Validation Plugin which makes it use Globalize for number and date parsing (enabling simple internationalized validation).
 
 This extension has the following dependencies:
-- jQuery Validation (which itself depends on jQuery)
-- Globalize
+- jQuery Validation (which itself depends on jQuery) - any version to my knowledge
+- Globalize v0.1.1 
 
 ##Getting started
 
