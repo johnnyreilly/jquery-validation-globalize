@@ -1,6 +1,8 @@
 jQuery Validation Globalize
 ===========================
 
+[![Build Status](https://travis-ci.org/johnnyreilly/jquery-validation-globalize.svg?branch=master)](https://travis-ci.org/johnnyreilly/jquery-validation-globalize)
+
 An extension to the jQuery Validation Plugin which makes it use Globalize for number and date parsing (enabling simple internationalized validation).
 
 This extension has the following dependencies:
