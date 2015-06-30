@@ -1,0 +1,36 @@
+{
+  "name": "jquery-validation-globalize",
+  "version": "0.1.1",
+  "description": "An extension to the jQuery Validation Plugin which makes it use Globalize.js for number and date parsing (enabling simple internationalized validation)",
+  "keywords": [
+    "jquery",
+    "validation",
+    "jquery-validate",
+    "globalize",
+    "internationalization",
+    "globalization",
+    "i18n"
+  ],
+  "main": "jquery.validate.globalize.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnnyreilly/jquery-validation-globalize.git"
+  },
+  "author": "johnnyreilly <johnny_reilly@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnnyreilly/jquery-validation-globalize/issues"
+  },
+  "homepage": "https://github.com/johnnyreilly/jquery-validation-globalize",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-qunit": "^1.2.1",
+    "gulp-util": "^3.0.6"
+  }
+}
