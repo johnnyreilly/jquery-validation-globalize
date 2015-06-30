@@ -9,7 +9,7 @@ This extension has the following dependencies:
 - jQuery Validation (which itself depends on jQuery) - any version to my knowledge
 - Globalize v0.1.1 
 
-##Getting started
+## Getting started
 
 Simply include jquery.validate.globalize.js on a page **after** jquery.validate.js and globalize.js.  Now you are validating using Globalize to do your number and date parsing.  Lucky you!
 
@@ -38,19 +38,19 @@ By the way - ignore the version number on NuGet - it says 1.0.1 - more properly 
 Inspired by [Scott Hanselman's blog post](http://www.hanselman.com/blog/GlobalizationInternationalizationAndLocalizationInASPNETMVC3JavaScriptAndJQueryPart1.aspx) and evolved from [my blog post](http://icanmakethiswork.blogspot.com/2012/09/globalize-and-jquery-validate.html).  Entirely dependent upon [jQuery Validation](https://github.com/jzaefferer/jquery-validation) and [Globalize](https://github.com/jquery/globalize/).
 
 ## Copyright
-Copyright � 2013 [John Reilly](mailto:johnny_reilly@hotmail.com).
+Copyright © 2013- [John Reilly](mailto:johnny_reilly@hotmail.com).
 
-##License
+## License
 
 MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)
 
-##Changelog
+## Changelog
 
-###1.0.1 / 2013-09-28
+### 0.1.1 / 2013-09-28
 
 - Changed min, max and range to defer to original validation methods in jQuery Validation once parsing has taken place. Should the implementations of these ever change then we no longer need to propogate those changes manually into jQuery Validation Globalize.  
 - Removed direct dependency on jQuery - not needed as jQuery Validation has (and will always have) this dependency itself.
 
-###1.0.0 / 2013-08-27
+### 0.0.1 / 2013-08-27
 
 - Initial release
