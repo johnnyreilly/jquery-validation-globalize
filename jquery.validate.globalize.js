@@ -11,11 +11,16 @@
         max: $.validator.methods.max,
         range: $.validator.methods.range
     };
+		
+    var parseFloat = function(value) {
+      return Object.prototype.toString.call(value) == '[object String]' ?
+      Globalize.parseFloat(value) : '';
+    };
 
     // Tell the validator that we want numbers parsed using Globalize
 
     $.validator.methods.number = function (value, element) {
-        var val = Globalize.parseFloat(value);
+        var val = parseFloat(value);
         return this.optional(element) || ($.isNumeric(val));
     };
 
@@ -30,17 +35,17 @@
     // then call into original implementation with parsed value
 
     $.validator.methods.min = function (value, element, param) {
-        var val = Globalize.parseFloat(value);
+        var val = parseFloat(value);
         return originalMethods.min.call(this, val, element, param);
     };
 
     $.validator.methods.max = function (value, element, param) {
-        var val = Globalize.parseFloat(value);
+        var val = parseFloat(value);
         return originalMethods.max.call(this, val, element, param);
     };
 
     $.validator.methods.range = function (value, element, param) {
-        var val = Globalize.parseFloat(value);
+        var val = parseFloat(value);
         return originalMethods.range.call(this, val, element, param);
     };
 
