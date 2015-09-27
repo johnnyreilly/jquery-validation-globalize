@@ -11,9 +11,9 @@ This extension has the following dependencies:
 
 ## Getting started
 
-Simply include jquery.validate.globalize.js on a page **after** jquery-validate and globalize.  Now you are validating using Globalize to do your number and date parsing.  Lucky you!
+Simply include jquery.validate.globalize.js on a page **after** jquery-validate and globalize (you need the core, number and date globalize modules as well as their associated cldr data - see [here](http://johnnyreilly.github.io/globalize-so-what-cha-want/) for details).  Now you are validating using Globalize to do your number and date parsing.  Lucky you!
 
-So what's different?  Well, for example, if you're catering for German users then you will be presumably using the "de-DE" Globalize culture.  If this culture has been selected at the time of validation then "Dienstag, 27. August 2013" will be successfully validated as a date and "10,5" will be successfully validated as a number.
+So what's different?  Well, for example, if you're catering for German users then you will be presumably using the "de-DE" Globalize culture.  If this culture has been selected at the time of validation then "27.08.2013" will be successfully validated as a date and "10,5" will be successfully validated as a number.
 
 The following validator methods are patched by jQuery Validation Globalize:
 
@@ -25,7 +25,6 @@ The following validator methods are patched by jQuery Validation Globalize:
 
 ## Customisation
 
-
 If you want to customise the data parsing you can do it by amending this to the parsing mechanism you prefer.  This is the default:
 
 ```
@@ -34,9 +33,14 @@ $.validator.methods.dateGlobalizeOptions = { dateParseFormat: { skeleton: "yMd" 
 
 [This](https://github.com/jquery/globalize/blob/master/doc/api/date/date-formatter.md) is a good resource for learning about parsing.  At present this only supports a single parsing format.  Changes could be made to support multiple formats if that was necessary.
 
-## To run locally
+## To install and test locally
 
-`bower install`
+```
+npm install
+npm run bower-install
+npm run make-globalize-cldr-data-js
+npm run test
+```
 
 ## Install into your project
 
