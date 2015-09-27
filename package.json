@@ -16,6 +16,8 @@
     "test": "test"
   },
   "scripts": {
+    "bower-install": "bower install",
+    "make-globalize-cldr-data-js": "gulp make-globalize-cldr-data-js",
     "test": "gulp"
   },
   "repository": {
@@ -29,6 +31,7 @@
   },
   "homepage": "https://github.com/johnnyreilly/jquery-validation-globalize",
   "devDependencies": {
+    "bower": "^1.5.3",
     "gulp": "^3.9.0",
     "gulp-qunit": "^1.2.1",
     "gulp-util": "^3.0.6"

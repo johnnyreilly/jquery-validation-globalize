@@ -7,11 +7,11 @@ An extension to the jQuery Validation Plugin which makes it use Globalize for nu
 
 This extension has the following dependencies:
 - [jQuery Validation](https://github.com/jzaefferer/jquery-validation) (which itself depends on jQuery) - any version to my knowledge
-- [Globalize](https://github.com/jquery/globalize) v0.1.1 
+- [Globalize](https://github.com/jquery/globalize) v1.x
 
 ## Getting started
 
-Simply include jquery.validate.globalize.js on a page **after** jquery.validate.js and globalize.js.  Now you are validating using Globalize to do your number and date parsing.  Lucky you!
+Simply include jquery.validate.globalize.js on a page **after** jquery-validate and globalize.  Now you are validating using Globalize to do your number and date parsing.  Lucky you!
 
 So what's different?  Well, for example, if you're catering for German users then you will be presumably using the "de-DE" Globalize culture.  If this culture has been selected at the time of validation then "Dienstag, 27. August 2013" will be successfully validated as a date and "10,5" will be successfully validated as a number.
 
@@ -23,11 +23,24 @@ The following validator methods are patched by jQuery Validation Globalize:
 - range
 - date
 
-## Install
+## Customisation
 
-On Bower (`bower install jquery-validation-globalize --save` ), NuGet (`Install-Package jQuery.Validation.Globalize`) and.... well here!  
 
-By the way - ignore the version number on NuGet - it says 1.0.1 - more properly it should be 0.1.1 (to match the Globalize version).  I'm not planning to maintain the version on NuGet any further but I thought I should note this down somewhere to avoid confusion.
+If you want to customise the data parsing you can do it by amending this to the parsing mechanism you prefer.  This is the default:
+
+```
+$.validator.methods.dateGlobalizeOptions = { dateParseFormat: { skeleton: "yMd" } };
+```
+
+[This](https://github.com/jquery/globalize/blob/master/doc/api/date/date-formatter.md) is a good resource for learning about parsing.  At present this only supports a single parsing format.  Changes could be made to support multiple formats if that was necessary.
+
+## To run locally
+
+`bower install`
+
+## Install into your project
+
+Using Bower: `bower install jquery-validation-globalize --save`  
 
 ## Author
 **John Reilly**
@@ -45,6 +58,10 @@ Copyright © 2013- [John Reilly](mailto:johnny_reilly@hotmail.com).
 MIT license - [http://www.opensource.org/licenses/mit-license.php](http://www.opensource.org/licenses/mit-license.php)
 
 ## Changelog
+
+### 1.0.0 / 2015-09-27
+
+- Moved to use Globalize 1.x.
 
 ### 0.1.1 / 2013-09-28
 

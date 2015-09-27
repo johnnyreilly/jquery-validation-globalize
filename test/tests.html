@@ -9,9 +9,33 @@
   <div id="qunit"></div>
   <div id="qunit-fixture"></div>
   <script src="qunit/qunit.js"></script>
+
+<!--
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/jquery-validation/dist/jquery.validate.js"></script>
+-->
+  <!--
+  First, we load Globalize's dependencies (`cldrjs` and its supplemental
+  module).
+  -->
+  <script src="../bower_components/cldrjs/dist/cldr.js"></script>
+  <script src="../bower_components/cldrjs/dist/cldr/event.js"></script>
+  <script src="../bower_components/cldrjs/dist/cldr/supplemental.js"></script>
+
+  <!--
+  Next, we load Globalize and its modules.
+  -->
+  <script src="../bower_components/globalize/dist/globalize.js"></script>
+  <script src="../bower_components/globalize/dist/globalize/number.js"></script>
+  <script src="../bower_components/globalize/dist/globalize/date.js"></script>
+
+  <script src="globalize-cldr-data.js"></script>
+  <script>
+    Globalize.locale('de');
+  </script>
+
   <script src="fakes.js"></script>
   <script src="../jquery.validate.globalize.js"></script>
   <script src="tests.js"></script>
 </body>
 </html>
-
