@@ -1,10 +1,15 @@
 language: node_js
+
 node_js:
   - 0.12
+
+sudo: false
+
 before_script:
   - npm install
 
   - npm run bower-install
 
   - npm run make-globalize-cldr-data-js
+
 script: npm run test
