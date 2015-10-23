@@ -52,7 +52,7 @@ Using Bower: `bower install jquery-validation-globalize --save`
 + http://twitter.com/johnny_reilly
 
 ## Credits
-Inspired by [Scott Hanselman's blog post](http://www.hanselman.com/blog/GlobalizationInternationalizationAndLocalizationInASPNETMVC3JavaScriptAndJQueryPart1.aspx) and evolved from [my blog post](http://icanmakethiswork.blogspot.com/2012/09/globalize-and-jquery-validate.html).  Entirely dependent upon [jQuery Validation](https://github.com/jzaefferer/jquery-validation) and [Globalize](https://github.com/jquery/globalize/).
+Inspired by [Scott Hanselman's blog post](http://www.hanselman.com/blog/GlobalizationInternationalizationAndLocalizationInASPNETMVC3JavaScriptAndJQueryPart1.aspx) and evolved from [my blog post](http://blog.johnnyreilly.com/2012/09/globalize-and-jquery-validate.html).  Entirely dependent upon [jQuery Validation](https://github.com/jzaefferer/jquery-validation) and [Globalize](https://github.com/jquery/globalize/).
 
 ## Copyright
 Copyright © 2013- [John Reilly](mailto:johnny_reilly@hotmail.com).
