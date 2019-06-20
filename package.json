@@ -1,6 +1,6 @@
 {
   "name": "jquery-validation-globalize",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "An extension to the jQuery Validation Plugin which makes it use Globalize.js for number and date parsing (enabling simple internationalized validation)",
   "keywords": [
     "jquery",
